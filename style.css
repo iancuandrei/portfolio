@@ -22,6 +22,10 @@ header {
 	justify-content: center;
 }
 
+form {
+	text-align: center;
+}
+
 input,
 textarea {
 	border: none;
@@ -87,10 +91,6 @@ a:focus {
 
 .fab:hover {
 	color: #a3f7bf;
-}
-
-.recaptcha {
-	text-align: center;
 }
 
 .g-recaptcha {
