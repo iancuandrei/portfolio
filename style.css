@@ -18,6 +18,8 @@ header {
 	width: 600px;
 	height: 30%;
 	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 
 input,
@@ -85,4 +87,9 @@ a:focus {
 
 .fab:hover {
 	color: #a3f7bf;
+}
+
+form {
+	align-items: center;
+	justify-content: center;
 }
