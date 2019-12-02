@@ -89,7 +89,10 @@ a:focus {
 	color: #a3f7bf;
 }
 
-form {
-	align-items: center;
-	justify-content: center;
+.recaptcha {
+	text-align: center;
+}
+
+.g-recaptcha {
+	display: inline-block;
 }
