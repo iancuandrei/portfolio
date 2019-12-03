@@ -1,5 +1,5 @@
 body {
-	background-color: #222831;
+	background-color: #212121;
 }
 
 .container {
@@ -49,12 +49,12 @@ button {
 	margin: 0;
 	margin-top: 30px;
 	color: white;
-	background-color: #29a19c;
+	background-color: #0d7377;
 }
 
 button:hover {
-	background-color: #a3f7bf;
-	color: #222831;
+	background-color: #14ffec;
+	color: #212121;
 	box-shadow: 2px 2px 8px rgb(0, 0, 0);
 }
 
@@ -92,7 +92,7 @@ a:focus {
 }
 
 .fab:hover {
-	color: #a3f7bf;
+	color: #14ffec;
 	text-shadow: 2px 2px 8px rgb(0, 0, 0);
 }
 
