@@ -92,3 +92,7 @@ a:focus {
 .fab:hover {
 	color: #a3f7bf;
 }
+
+.hidden {
+	display: none;
+}

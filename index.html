@@ -23,6 +23,9 @@
 			<div class="form">
 				<h2>Contact</h2>
 				<form action="POST" data-netlify="true">
+					<div class="hidden">
+						<label>Don’t fill this out if you're human: <input name="bot-field"/></label>
+					</div>
 					<div><input type="text" name="name" id="name" placeholder="Name" /></div>
 					<div><input type="email" name="email" id="email" placeholder="Email" /></div>
 					<div><textarea name="message" id="message" placeholder="Message"></textarea></div>
