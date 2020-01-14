@@ -1,5 +1,5 @@
 body {
-	background-color: #212121;
+	background: #222831;
 }
 
 .container {
@@ -49,13 +49,13 @@ button {
 	margin: 0;
 	margin-top: 30px;
 	color: white;
-	background-color: #0d7377;
+	background-color: #00adb5;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 button:hover {
 	background-color: #14ffec;
 	color: #212121;
-	box-shadow: 2px 2px 8px rgb(0, 0, 0);
 }
 
 h2 {
