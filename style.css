@@ -41,6 +41,10 @@ textarea {
 	height: 150px;
 }
 
+.g-recaptcha {
+	display: inline-block;
+}
+
 button {
 	border: none;
 	border-radius: 4px;
