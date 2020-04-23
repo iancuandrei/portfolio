@@ -85,6 +85,17 @@ h1 {
 	font-weight: 400;
 }
 
+h2 {
+	font-family: "Amatic SC", cursive;
+	color: white;
+	text-shadow: 2px 2px 8px rgb(0, 0, 0);
+	margin-bottom: 0;
+}
+
+.contact {
+	margin-bottom: 20px;
+}
+
 a:active,
 a:focus {
 	outline: 0;
