@@ -1,0 +1,150 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #7510f7;
+	color: white;
+	padding-top: 50px;
+}
+
+.contact {
+	font-size: 2.5em;
+	margin-bottom: 70px;
+	/* color: #232733; */
+}
+
+.nameEmail {
+	display: flex;
+	width: 100%;
+}
+
+input,
+textarea {
+	border: 1px solid #e6edf6;
+	color: #232733;
+	border-radius: 4px;
+	font-size: 1em;
+	margin-top: 10px;
+	padding-left: 10px;
+	box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+	font-family: "Rubik", sans-serif;
+}
+
+textarea {
+	height: 150px;
+	width: 729px;
+	resize: vertical;
+	padding-top: 10px;
+	font-size: 1.4em;
+}
+
+.mr {
+	margin-right: 20px;
+}
+
+label {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 20px;
+	font-size: 1.5em;
+	color: #ede0ff;
+	width: 100%;
+}
+
+input {
+	height: 50px;
+	width: 346px;
+}
+
+.form button {
+	width: 250px;
+	height: 50px;
+	font-size: 1.5em;
+	font-weight: 600;
+	border: none;
+	background: white;
+	color: #7510f7;
+	border-radius: 5px;
+
+	margin-bottom: 60px;
+	margin-top: 50px;
+	box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form button:hover {
+	background: #f0f0f0;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.footerIcon {
+	width: 70px;
+	height: auto;
+	margin: 0 20px;
+	margin-bottom: 150px;
+}
+
+.footerIcon:hover {
+	color: #cecece;
+}
+
+.form a {
+	text-decoration: none;
+	color: white;
+}
+
+@media (max-width: 600px) {
+	.contact {
+		font-size: 2.2em;
+		margin-bottom: 50px;
+	}
+
+	.nameEmail {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	.mr {
+		margin-right: 0px;
+	}
+
+	label {
+		width: 90%;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		margin-left: -5px;
+	}
+
+	textarea {
+		font-size: 1em;
+	}
+
+	.form {
+		width: 100%;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	.form button {
+		width: 94%;
+	}
+
+	.footerIcon {
+		margin-bottom: 70px;
+	}
+}

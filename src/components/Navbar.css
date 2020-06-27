@@ -1,0 +1,40 @@
+.navbar {
+	padding: 30px 50px 0 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.link {
+	margin-left: 40px;
+	text-decoration: none;
+	color: #232733;
+	font-size: 1.4em;
+}
+
+.link:hover {
+	color: #7510f7;
+}
+
+.logo {
+	width: 110px;
+	height: auto;
+}
+
+@media (max-width: 600px) {
+	.logo {
+		width: 60px;
+	}
+
+	.link {
+		margin-left: 25px;
+		font-size: 1.2em;
+	}
+
+	.navbar {
+		padding: 10px;
+		padding-top: 20px;
+	}
+	.navbar div {
+		padding-top: 17px;
+	}
+}

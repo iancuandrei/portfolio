@@ -1,0 +1,161 @@
+.projectsWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #232733;
+	margin-bottom: 70px;
+}
+
+.projectsWrapper h2 {
+	font-size: 2.5em;
+	margin-bottom: 70px;
+}
+
+.project {
+	display: flex;
+	width: 70%;
+	height: 500px;
+
+	border: 1px solid #e6edf6;
+	box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+	margin-bottom: 60px;
+	border-radius: 15px;
+}
+
+.project img {
+	height: 100%;
+	border-radius: 15px 0 0 15px;
+}
+
+.projDesc {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 50px 50px 0 50px;
+}
+
+.projDesc h2 {
+	font-size: 2em;
+	margin-bottom: 50px;
+}
+.projDesc p {
+	font-size: 1.3em;
+	line-height: 30px;
+	margin-bottom: 50px;
+}
+
+.lang {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 50px;
+	padding: 20px 20px;
+	margin-bottom: 50px;
+}
+
+.lang div {
+	height: 20px;
+	margin: 10px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+}
+
+.live {
+	width: 250px;
+	height: 45px;
+	font-size: 1.4em;
+	font-weight: 600;
+	border: none;
+	background: #7510f7;
+	color: white;
+	border-radius: 5px;
+	margin-right: 20px;
+	margin-bottom: 50px;
+	box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.source {
+	width: 250px;
+	height: 45px;
+	font-size: 1.4em;
+	font-weight: 600;
+	border: none;
+	background: #21c380;
+	color: white;
+	border-radius: 5px;
+	margin-right: 20px;
+	margin-bottom: 50px;
+	box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.live:hover {
+	background: #903aff;
+}
+.source:hover {
+	background: #33d893;
+}
+
+.btnIcon {
+	position: relative;
+	top: 3px;
+	right: 10px;
+}
+
+@media (max-width: 1440px) {
+	.project {
+		width: 80%;
+		height: 550px;
+	}
+}
+
+@media (max-width: 600px) {
+	.projectsWrapper h2 {
+		font-size: 2.2em;
+		margin-bottom: 70px;
+	}
+
+	.project img {
+		display: none;
+	}
+
+	.project {
+		width: 85%;
+		height: 100%;
+	}
+
+	.projDesc {
+		padding: 20px;
+	}
+
+	.projDesc h2 {
+		font-size: 1.8em;
+		margin-top: 40px;
+	}
+	.projDesc p {
+		font-size: 1.1em;
+		margin-bottom: 50px;
+		
+	}
+
+	.lang {
+		padding: 0;
+		justify-content: center;
+	}
+
+	.buttons {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.live {
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+	.source {
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+}
