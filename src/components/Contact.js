@@ -20,14 +20,22 @@ export default function Contact() {
 			message: message
 		}
 
-		fetch("/", {
-			method: "POST",
-			headers: { "Content-Type": "application/x-www-form-urlencoded" },
-			body: encode({ "form-name": "contact", ...obj })
-		})
-			.then(() => alert("Success!"))
-			.catch(error => alert(error));
+		if (name === null) {
+			alert("Add a name")
+		} else if (email === null) {
+			alert("Add an email")
+		} else if (message === null) {
+			alert("Add a message")
+		} else {
 
+			fetch("/", {
+				method: "POST",
+				headers: { "Content-Type": "application/x-www-form-urlencoded" },
+				body: encode({ "form-name": "contact", ...obj })
+			})
+				.then(() => alert("Success!"))
+				.catch(error => alert(error));
+		}
 		e.preventDefault();
 	}
 
