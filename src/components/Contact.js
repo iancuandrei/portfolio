@@ -9,11 +9,11 @@ export default function Contact() {
 			<form name="contact" action="POST" >
 				<input type="hidden" name="form-name" value="contact" />
 
-				{/* <div class="hidden">
+				<div class="hidden">
 					<label>
 						Don’t fill this out if you're human: <input name="bot-field" />
 					</label>
-				</div> */}
+				</div>
 				<div className="nameEmail">
 					<label className="mr">
 						Name
