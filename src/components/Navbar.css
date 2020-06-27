@@ -9,6 +9,7 @@
 	text-decoration: none;
 	color: #232733;
 	font-size: 1.4em;
+	background: white;
 }
 
 .link:hover {
@@ -31,7 +32,7 @@
 	}
 
 	.navbar {
-		padding: 10px;
+		padding: 15px;
 		padding-top: 20px;
 	}
 	.navbar div {

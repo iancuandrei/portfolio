@@ -2,6 +2,7 @@
 	text-align: center;
 	color: #232733;
 	height: 100vh;
+	
 }
 
 .intro h1 {
@@ -12,6 +13,8 @@
 .intro p {
 	margin-bottom: 50px;
 	font-size: 1.6em;
+	
+	
 }
 
 .portrait {
