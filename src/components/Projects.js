@@ -1,8 +1,8 @@
 import React from "react";
 import "./Projects.css";
-import devsource from "../images/devsource2.png";
-import artinsider from "../images/artinsider2.png";
-import travel from "../images/travel.png";
+import devsource from "../images/devsource2-min.png";
+import artinsider from "../images/artinsider2-min.png";
+import travel from "../images/travel-min.png";
 import { FaGithubSquare, FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Projects() {
