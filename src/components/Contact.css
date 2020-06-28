@@ -88,9 +88,11 @@ form {
 .footerIcon {
 	width: 70px;
 	height: auto;
-	margin: 0 20px;
-	margin-bottom: 150px;
+	
+	
 }
+
+
 
 .footerIcon:hover {
 	color: #cecece;
@@ -99,7 +101,23 @@ form {
 .form a {
 	text-decoration: none;
 	color: white;
+	margin: 0 20px;
+	
 }
+
+.iconWrapper {
+	margin-bottom: 150px;
+}
+@media (min-width: 1700px){
+	.contact {
+		font-size: 3em;
+	}
+
+	label {	
+		font-size: 1.7em;
+	}
+}
+
 
 @media (max-width: 600px) {
 	.contact {
@@ -143,7 +161,7 @@ form {
 		width: 94%;
 	}
 
-	.footerIcon {
+	.iconWrapper {
 		margin-bottom: 70px;
 	}
 }

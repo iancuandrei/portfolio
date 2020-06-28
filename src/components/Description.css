@@ -70,10 +70,68 @@
 	margin-bottom: 20px;
 }
 
+
+@media (min-width: 1700px) {
+	.description h2 {
+		font-size: 3em;
+	}
+	.description p {
+		font-size: 1.5em;
+	}
+
+	.description {
+		height: 500px;
+	}
+
+	.skill-col h2 {
+		font-size: 2em;
+	}
+
+	.skill {
+		font-size: 1.3em;
+	}
+}
+
+@media (max-width: 1600px) {
+
+	.description {
+		padding: 80px 15% 0 15%;
+		height: 450px;
+	}
+
+}
+@media (max-width: 1200px) {
+
+	.skills {
+		width: 85%;
+	}
+}
+
+@media (max-width: 1000px) {
+
+	.description {
+		padding: 80px 100px 0 100px;
+		height: 450px;
+	}
+.skills {
+	width: 85%;
+}
+}
+@media (max-width: 800px) {
+
+	.description {
+		padding: 80px 100px 0 100px;
+		height: 500px;
+	}
+.skills {
+	width: 85%;
+}
+}
+
 @media (max-width: 600px) {
 	.description {
 		padding: 80px 20px 0 20px;
-		height: 500px;
+		height: 520px;
 	}
 
 	.description h2 {
@@ -82,7 +140,7 @@
 	}
 
 	.description p {
-		font-size: 1em;
+		font-size: 1.1em;
 	}
 
 	.skills {

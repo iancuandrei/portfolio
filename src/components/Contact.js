@@ -68,7 +68,7 @@ export default function Contact() {
 
 				<button type="submit" onClick={e => handleSubmit(e)}>Submit</button>
 			</form>
-			<div>
+			<div className="iconWrapper">
 				<a href="https://www.linkedin.com/in/iancu-andrei/" rel="noopener noreferrer" target="_blank">
 					<AiFillLinkedin className="footerIcon" />
 				</a>
