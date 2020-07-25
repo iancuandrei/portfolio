@@ -9,8 +9,8 @@ export default function Description() {
 				<h2>About Me</h2>
 				<p>
 					A Full Stack Developer who specializes in JavaScript Technologies across the whole stack (React, Node.js, Express). Experience building
-					complete web applications. Passionate about anything remotely related to software development. Currently a student at Wild Code School in
-					Bucharest.
+					complete web applications. Passionate about anything remotely related to software development. Currently working as a Front-End developer
+					at Rewordly Inc.
 				</p>
 			</div>
 			<div className="center">
