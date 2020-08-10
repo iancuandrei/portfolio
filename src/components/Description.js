@@ -10,7 +10,7 @@ export default function Description() {
 				<p>
 					A Full Stack Developer who specializes in JavaScript Technologies across the whole stack (React, Node.js, Express). Experience building
 					complete web applications. Passionate about anything remotely related to software development. <br /> Currently working as a Front-End
-					developer at Rewordly Inc.
+					developer at Readocracy.
 				</p>
 			</div>
 			<div className="center">
