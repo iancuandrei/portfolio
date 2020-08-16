@@ -1,5 +1,5 @@
 import React from "react";
-import "normalize.css";
+import "modern-normalize";
 import "./App.css";
 import LandingPage from "./components/LandingPage";
 

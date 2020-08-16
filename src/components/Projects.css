@@ -58,8 +58,15 @@
 	margin-bottom: 50px;
 }
 
-.lang div {
-	height: 20px;
+.lang .skill {
+	text-align: center;
+	border: 2px solid #7510f7;
+	border-radius: 5px;
+	display: inline-block;
+	margin-bottom: 20px;
+	padding: 7px 15px;
+	font-weight: 500;
+	color: #232733;
 	margin: 10px;
 }
 
