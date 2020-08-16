@@ -4,7 +4,6 @@
 	justify-content: center;
 	background: #7510f7;
 	color: white;
-	/* padding-top: 90px; */
 	height: 100vh;
 }
 
@@ -107,10 +106,6 @@ form {
 	margin: 0 20px;
 }
 
-/* .iconWrapper {
-	margin-bottom: 150px;
-} */
-
 @media (min-width: 1700px) {
 	.contact {
 		font-size: 3em;
@@ -156,10 +151,6 @@ form {
 	.contact-ct button {
 		width: 90%;
 	}
-
-	/* .iconWrapper {
-		margin-bottom: 70px;
-	} */
 }
 
 @media (max-width: 600px) {
@@ -203,10 +194,6 @@ form {
 		width: 90%;
 		margin-bottom: 30px;
 	}
-
-	/* .iconWrapper {
-		margin-bottom: 70px;
-	} */
 }
 
 @media (max-height: 735px) {
