@@ -2,25 +2,20 @@
 	padding: 30px 50px 0 30px;
 	display: flex;
 	justify-content: space-between;
-	
 }
 
-
-@media not all and (min-resolution:.001dpcm) { 
-    .navbar { 
-       height: 110px;
-        
-    }
+@media not all and (min-resolution: 0.001dpcm) {
+	.navbar {
+		height: 110px;
+	}
 }
-
-
 
 .link {
 	margin-left: 40px;
 	text-decoration: none;
 	color: #232733;
 	font-size: 1.4em;
-	background: white;
+	background: #fff;
 }
 
 .link:hover {
@@ -42,13 +37,11 @@
 }
 
 @media (max-width: 600px) {
-	@media not all and (min-resolution:.001dpcm) { 
-		.navbar { 
-		   height: 60px;
-			
+	@media not all and (min-resolution: 0.001dpcm) {
+		.navbar {
+			height: 60px;
 		}
 	}
-
 
 	.logo {
 		width: 60px;

@@ -11,7 +11,13 @@ export default function Description() {
 					A Full Stack Developer who specializes in JavaScript Technologies across the whole stack (React, Node.js, Express). Experience building
 					complete web applications. Passionate about anything remotely related to software development.
 				</p>
-				<p>Currently working as a Front-End developer at Readocracy.</p>
+				<p>
+					Currently working as a Frontend Developer at{" "}
+					<a target="_blank" style={{ color: "#fff" }} rel="noopener noreferrer" href="https://readocracy.com/">
+						Readocracy
+					</a>
+					.
+				</p>
 			</div>
 			<div className="center">
 				<div className="skills">
