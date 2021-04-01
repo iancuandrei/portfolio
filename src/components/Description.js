@@ -28,6 +28,7 @@ export default function Description() {
 						<div className="skill">CSS</div>
 						<div className="skill">JavaScript</div>
 						<div className="skill">React</div>
+						<div className="skill">React Native</div>
 						<div className="skill">Redux</div>
 						<div className="skill">MaterialUI</div>
 					</div>
