@@ -22,6 +22,18 @@
 	border-radius: 15px;
 }
 
+.project.reverse {
+	flex-direction: row-reverse;
+}
+
+.project.reverse img {
+	border-radius: 0 15px 15px 0;
+}
+
+.project.reverse img.todo {
+	border-left: 1px solid #e3e3e3;
+}
+
 .image-link {
 	width: 557px;
 }
@@ -54,6 +66,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 50px;
+	justify-content: center;
 	padding: 20px 20px;
 	margin-bottom: 50px;
 }
