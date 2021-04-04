@@ -75,10 +75,11 @@ input {
 	margin-bottom: 60px;
 	margin-top: 50px;
 	box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+	transition: 0.3s;
 }
 
 .contact-ct button:hover {
-	background: #f0f0f0;
+	background: #e8d6ff;
 }
 
 form {
@@ -94,10 +95,11 @@ form {
 .footerIcon {
 	width: 70px;
 	height: auto;
+	transition: 0.3s;
 }
 
 .footerIcon:hover {
-	color: #cecece;
+	color: #e8d6ff;
 }
 
 .contact-ct a {
