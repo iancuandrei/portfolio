@@ -48,7 +48,7 @@ export default function Contact() {
 			})
 				.then(() => {
 					document.querySelector(".submitBtn").classList.add("submitted");
-					document.querySelector(".submitBtn").innerHTML = "Submitted 🎉";
+					document.querySelector(".submitBtn").innerHTML = "Submitted <span>🎉</span>";
 				})
 				.catch((error) => alert(error));
 
