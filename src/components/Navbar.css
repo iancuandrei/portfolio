@@ -19,8 +19,10 @@
 	transition: 0.3s;
 }
 
-.link:hover {
-	color: #7510f7;
+@media (hover: hover) {
+	.link:hover {
+		color: #7510f7;
+	}
 }
 
 .logo {

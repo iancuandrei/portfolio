@@ -78,10 +78,6 @@ input {
 	transition: 0.3s;
 }
 
-.contact-ct button:hover {
-	background: #e8d6ff;
-}
-
 form {
 	display: flex;
 	flex-direction: column;
@@ -98,10 +94,6 @@ form {
 	transition: 0.3s;
 }
 
-.footerIcon:hover {
-	color: #e8d6ff;
-}
-
 .contact-ct a {
 	text-decoration: none;
 	color: #fff;
@@ -114,6 +106,16 @@ form {
 
 button.submitted {
 	border: 4px solid #34ff34;
+}
+
+@media (hover: hover) {
+	.footerIcon:hover {
+		color: #e8d6ff;
+	}
+
+	.contact-ct button:hover {
+		background: #e8d6ff;
+	}
 }
 
 @media (min-width: 1700px) {
