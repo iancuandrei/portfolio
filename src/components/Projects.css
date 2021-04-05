@@ -30,8 +30,8 @@
 	border-radius: 0 15px 15px 0;
 }
 
-.project.reverse img.todo {
-	border-left: 1px solid #e3e3e3;
+.project img.todo {
+	border-right: 1px solid #e3e3e3;
 }
 
 .image-link {
