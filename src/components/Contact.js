@@ -40,6 +40,13 @@ export default function Contact() {
 			} else {
 				document.querySelector(".messageInput").classList.remove("inputError");
 			}
+
+			document.querySelectorAll(".inputError").forEach((error) => {
+				error.classList.add("jiggle");
+				setTimeout(() => {
+					error.classList.remove("jiggle");
+				}, 300);
+			});
 		} else {
 			fetch("/", {
 				method: "POST",
@@ -49,6 +56,10 @@ export default function Contact() {
 				.then(() => {
 					document.querySelector(".submitBtn").classList.add("submitted");
 					document.querySelector(".submitBtn").innerHTML = "Submitted <span>🎉</span>";
+					document.querySelector(".submitBtn").classList.add("zoom");
+					setTimeout(() => {
+						document.querySelector(".submitBtn").classList.remove("zoom");
+					}, 300);
 				})
 				.catch((error) => alert(error));
 

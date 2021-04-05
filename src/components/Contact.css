@@ -114,6 +114,51 @@ button.submitted span {
 	margin-left: 10px;
 }
 
+.jiggle {
+	animation: jiggle 0.2s infinite;
+	-webkit-animation: jiggle 0.2s infinite;
+	-moz-animation-duration: 0.2s;
+	animation-duration: 0.2s;
+	-moz-animation-name: jiggle;
+	animation-name: jiggle;
+	-moz-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+}
+
+@-moz-keyframes jiggle {
+	0% {
+		-moz-transform: rotate(-1deg);
+	}
+	50% {
+		-moz-transform: rotate(1deg);
+	}
+}
+
+@keyframes jiggle {
+	0% {
+		-moz-transform: rotate(-1deg);
+	}
+	50% {
+		-moz-transform: rotate(1deg);
+	}
+}
+
+@-webkit-keyframes jiggle {
+	0% {
+		-webkit-transform: rotate(-1deg);
+	}
+	50% {
+		-webkit-transform: rotate(1deg);
+	}
+}
+
+.zoom {
+	transform: scale(1.1);
+}
+
 @media (hover: hover) {
 	.footerIcon:hover {
 		color: #e8d6ff;
