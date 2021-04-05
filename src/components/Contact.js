@@ -9,33 +9,53 @@ const encode = (data) => {
 };
 
 export default function Contact() {
-	const [name, setName] = useState(null);
-	const [email, setEmail] = useState(null);
-	const [message, setMessage] = useState(null);
+	const [name, setName] = useState("");
+	const [email, setEmail] = useState("");
+	const [message, setMessage] = useState("");
 
 	const handleSubmit = (e) => {
+		e.preventDefault();
+
 		const obj = {
 			name: name,
 			email: email,
 			message: message,
 		};
 
-		if (name === null) {
-			alert("Add a name");
-		} else if (email === null) {
-			alert("Add an email");
-		} else if (message === null) {
-			alert("Add a message");
+		if (name === "" || email === "" || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || message === "") {
+			if (name === "") {
+				document.querySelector(".nameInput").classList.add("inputError");
+			} else {
+				document.querySelector(".nameInput").classList.remove("inputError");
+			}
+
+			if (email === "" || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+				document.querySelector(".emailInput").classList.add("inputError");
+			} else {
+				document.querySelector(".emailInput").classList.remove("inputError");
+			}
+
+			if (message === "") {
+				document.querySelector(".messageInput").classList.add("inputError");
+			} else {
+				document.querySelector(".messageInput").classList.remove("inputError");
+			}
 		} else {
 			fetch("/", {
 				method: "POST",
 				headers: { "Content-Type": "application/x-www-form-urlencoded" },
 				body: encode({ "form-name": "contact", ...obj }),
 			})
-				.then(() => alert("Success!"))
+				.then(() => {
+					document.querySelector(".submitBtn").classList.add("submitted");
+					document.querySelector(".submitBtn").innerHTML = "Submitted 🎉";
+				})
 				.catch((error) => alert(error));
+
+			document.querySelector(".nameInput").classList.remove("inputError");
+			document.querySelector(".emailInput").classList.remove("inputError");
+			document.querySelector(".messageInput").classList.remove("inputError");
 		}
-		e.preventDefault();
 	};
 
 	return (
@@ -53,20 +73,35 @@ export default function Contact() {
 					<div className="nameEmail">
 						<label className="mr">
 							Name
-							<input type="text" name="name" id="name" required value={name} onChange={(e) => setName(e.target.value)} />
+							<input type="text" className="nameInput" name="name" id="name" required value={name} onChange={(e) => setName(e.target.value)} />
 						</label>
 						<label>
 							Email
-							<input type="email" name="email" id="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
+							<input
+								className="emailInput"
+								type="email"
+								name="email"
+								id="email"
+								required
+								value={email}
+								onChange={(e) => setEmail(e.target.value)}
+							/>
 						</label>
 					</div>
 
 					<label>
 						Message
-						<textarea name="message" id="message" required value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+						<textarea
+							className="messageInput"
+							name="message"
+							id="message"
+							required
+							value={message}
+							onChange={(e) => setMessage(e.target.value)}
+						></textarea>
 					</label>
 
-					<button type="submit" onClick={(e) => handleSubmit(e)}>
+					<button className="submitBtn" type="submit" onClick={(e) => handleSubmit(e)}>
 						Submit
 					</button>
 				</form>
