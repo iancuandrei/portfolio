@@ -139,10 +139,10 @@ button.submitted span {
 
 @keyframes jiggle {
 	0% {
-		-moz-transform: rotate(-1deg);
+		transform: rotate(-1deg);
 	}
 	50% {
-		-moz-transform: rotate(1deg);
+		transform: rotate(1deg);
 	}
 }
 
