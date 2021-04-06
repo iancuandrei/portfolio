@@ -26,25 +26,12 @@
 	flex-direction: row-reverse;
 }
 
-.project.reverse img {
-	border-radius: 0 15px 15px 0;
-}
-
 .project.reverse .project-gradient {
 	border-radius: 0 15px 15px 0;
 }
 
-.project img.todo {
-	border-right: 1px solid #e3e3e3;
-}
-
 .image-link {
 	width: 557px;
-}
-
-.project img {
-	height: 100%;
-	border-radius: 15px 0 0 15px;
 }
 
 .projDesc {
