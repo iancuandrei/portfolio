@@ -1,10 +1,5 @@
 import React from "react";
 import "./Projects.css";
-import devsource from "../images/devsource2-min.png";
-import artinsider from "../images/artinsider2-min.png";
-import travel from "../images/travel.png";
-import todoapp from "../images/todoapp.png";
-import trivia from "../images/triviagame.png";
 import { FaGithubSquare, FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Projects() {
@@ -12,7 +7,9 @@ export default function Projects() {
 		<div className="projectsWrapper">
 			<h2>Projects</h2>
 			<div className="project">
-				<img alt="project screenshot" src={artinsider}></img>
+				{/* <img alt="project screenshot" src={artinsider}></img> */}
+				<div className="project-gradient"></div>
+
 				<div className="projDesc">
 					<h2>artInsider</h2>
 					<p>Art Gallery created using React.js and The Harvard Art Museums API.</p>
@@ -42,7 +39,9 @@ export default function Projects() {
 				</div>
 			</div>
 			<div className="project reverse">
-				<img alt="project screenshot" src={travel}></img>
+				{/* <img alt="project screenshot" src={travel}></img> */}
+				<div className="project-gradient"></div>
+
 				<div className="projDesc">
 					<h2>Travel From Your Couch Hackathon</h2>
 					<p>Project for the Travel from your couch Hackathon. Created with React, using a public live webcam API.</p>
@@ -72,7 +71,8 @@ export default function Projects() {
 				</div>
 			</div>
 			<div className="project">
-				<img alt="project screenshot" src={trivia}></img>
+				{/* <img alt="project screenshot" src={trivia}></img> */}
+				<div className="project-gradient"></div>
 				<div className="projDesc">
 					<h2>Trivia Game</h2>
 					<p>Trivia game created using the Open Trivia DB API. </p>
@@ -102,7 +102,9 @@ export default function Projects() {
 				</div>
 			</div>
 			<div className="project  reverse">
-				<img alt="project screenshot" src={devsource}></img>
+				{/* <img alt="project screenshot" src={devsource}></img> */}
+				<div className="project-gradient"></div>
+
 				<div className="projDesc">
 					<h2>devSource</h2>
 					<p>A place for all of your development resources</p>
@@ -132,7 +134,9 @@ export default function Projects() {
 				</div>
 			</div>
 			<div className="project">
-				<img class="todo" alt="project screenshot" src={todoapp}></img>
+				{/* <img class="todo" alt="project screenshot" src={todoapp}></img> */}
+				<div className="project-gradient"></div>
+
 				<div className="projDesc">
 					<h2>Todo App</h2>
 					<p>Todo App with Local Storage</p>

@@ -30,6 +30,10 @@
 	border-radius: 0 15px 15px 0;
 }
 
+.project.reverse .project-gradient {
+	border-radius: 0 15px 15px 0;
+}
+
 .project img.todo {
 	border-right: 1px solid #e3e3e3;
 }
@@ -50,6 +54,39 @@
 	align-items: center;
 	width: 100%;
 	padding: 50px 50px 0 50px;
+}
+
+.project-gradient {
+	height: calc(100% + 1px);
+	width: 407px;
+	min-width: 407px;
+	background: grey;
+	border-radius: 15px 0 0 15px;
+}
+
+div.project:nth-of-type(1) .project-gradient {
+	background-color: #4158d0;
+	background-image: linear-gradient(43deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+}
+
+div.project:nth-of-type(2) .project-gradient {
+	background-color: #0093e9;
+	background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+div.project:nth-of-type(3) .project-gradient {
+	background-color: #85ffbd;
+	background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+}
+
+div.project:nth-of-type(4) .project-gradient {
+	background-color: #fa8bff;
+	background-image: linear-gradient(45deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90%);
+}
+
+div.project:nth-of-type(5) .project-gradient {
+	background-color: #08aeea;
+	background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
 }
 
 .projDesc h2 {
