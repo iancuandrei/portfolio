@@ -227,7 +227,7 @@ div.project:nth-of-type(5) .project-gradient {
 		width: 85%;
 		height: 100%;
 	}
-	.project img {
+	.project .project-gradient {
 		display: none;
 	}
 
@@ -247,7 +247,7 @@ div.project:nth-of-type(5) .project-gradient {
 		margin-bottom: 70px;
 	}
 
-	.project img {
+	.project .project-gradient {
 		display: none;
 	}
 
