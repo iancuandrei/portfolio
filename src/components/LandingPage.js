@@ -18,15 +18,15 @@ export default function LandingPage() {
 					el: myRef.current,
 					mouseControls: true,
 					touchControls: true,
-					minHeight: 200.00,
-					minWidth: 200.00,
-					scale: 1.00,
-					scaleMobile: 1.00,
+					minHeight: 200.0,
+					minWidth: 200.0,
+					scale: 1.0,
+					scaleMobile: 1.0,
 					color: 0x7724d6,
 					color2: 0xffffff,
 					backgroundColor: 0xffffff,
-					size: 4.00,
-					spacing: 24.00
+					size: 4.0,
+					spacing: 24.0,
 				})
 			);
 		}
@@ -37,7 +37,6 @@ export default function LandingPage() {
 	return (
 		<div>
 			<div className="intro" ref={myRef}>
-
 				<div className="navbar">
 					<img alt="logo" className="logo" src={logo}></img>
 					<div>
