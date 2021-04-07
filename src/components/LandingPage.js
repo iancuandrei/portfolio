@@ -18,15 +18,16 @@ export default function LandingPage() {
 					el: myRef.current,
 					mouseControls: true,
 					touchControls: true,
+					gyroControls: false,
 					minHeight: 200.0,
 					minWidth: 200.0,
 					scale: 1.0,
 					scaleMobile: 1.0,
-					color: 0x7724d6,
+					color: 0x7510f7,
 					color2: 0xffffff,
 					backgroundColor: 0xffffff,
-					size: 4.0,
-					spacing: 24.0,
+					size: 3.4,
+					spacing: 11.0,
 				})
 			);
 		}
