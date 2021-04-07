@@ -51,7 +51,7 @@ export default function LandingPage() {
 						</a>
 					</div>
 				</div>
-				<h1>Hey, I'm Andrei.</h1>
+				<h1>Hey, I'm Andrei 👋</h1>
 				<p>Full Stack JavaScript Developer</p>
 				<img className="portrait" alt="portrait" src={portrait}></img>
 			</div>
