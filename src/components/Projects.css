@@ -14,7 +14,6 @@
 .project {
 	display: flex;
 	width: 70%;
-	height: 500px;
 
 	border: 1px solid #e6edf6;
 	box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -122,7 +121,6 @@ div.project:nth-of-type(5) .project-gradient {
 	color: #fff;
 	border-radius: 5px;
 	margin-right: 20px;
-	margin-bottom: 50px;
 	box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
 	transition: 0.3s;
 }
@@ -135,8 +133,6 @@ div.project:nth-of-type(5) .project-gradient {
 	background: #21c380;
 	color: #fff;
 	border-radius: 5px;
-	margin-right: 20px;
-	margin-bottom: 50px;
 	box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
 	transition: 0.3s;
 }
@@ -154,6 +150,35 @@ div.project:nth-of-type(5) .project-gradient {
 	position: relative;
 	top: 3px;
 	right: 10px;
+}
+
+.project {
+	width: 70%;
+	height: calc(100% + 20px);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	padding: 30px;
+}
+
+.projDesc {
+	padding: 50px;
+	position: relative;
+	background: white;
+	z-index: 3;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.project .project-gradient {
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
 }
 
 @media (min-width: 1700px) {
@@ -186,19 +211,26 @@ div.project:nth-of-type(5) .project-gradient {
 @media (max-width: 1586px) {
 	.project {
 		width: 80%;
-		height: 550px;
+	}
+	.skills {
+		width: 80%;
 	}
 }
 @media (max-width: 1310px) {
 	.project {
 		width: 85%;
-		height: 550px;
+	}
+	.skills {
+		width: 85%;
 	}
 }
 @media (max-width: 1220px) {
 	.project {
 		width: 85%;
-		height: 750px;
+	}
+	.live {
+		margin-bottom: 20px;
+		margin-right: 0px;
 	}
 	.lang {
 		padding: 0;
@@ -218,7 +250,6 @@ div.project:nth-of-type(5) .project-gradient {
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
-		padding: 15px;
 	}
 
 	.projDesc {
@@ -238,11 +269,10 @@ div.project:nth-of-type(5) .project-gradient {
 	}
 
 	.live {
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 		margin-right: 0;
 	}
 	.source {
-		margin-bottom: 50px;
 		margin-right: 0;
 	}
 }
@@ -250,6 +280,7 @@ div.project:nth-of-type(5) .project-gradient {
 @media (max-width: 600px) {
 	.project {
 		width: 85%;
+		padding: 15px;
 	}
 
 	.projectsWrapper h2 {
@@ -259,7 +290,6 @@ div.project:nth-of-type(5) .project-gradient {
 
 	.projDesc h2 {
 		font-size: 1.8em;
-		margin-top: 40px;
 	}
 	.projDesc p {
 		font-size: 1.1em;
@@ -281,7 +311,6 @@ div.project:nth-of-type(5) .project-gradient {
 		margin-right: 0;
 	}
 	.source {
-		margin-bottom: 20px;
 		margin-right: 0;
 	}
 }
