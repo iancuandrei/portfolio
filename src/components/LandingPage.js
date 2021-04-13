@@ -26,8 +26,6 @@ export default function LandingPage() {
 					color: 0x7510f7,
 					color2: 0xffffff,
 					backgroundColor: 0xffffff,
-					size: 3.4,
-					spacing: 11.0,
 				})
 			);
 		}
