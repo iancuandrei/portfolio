@@ -8,8 +8,8 @@ export default function Description() {
 			<div className="description">
 				<h2>About Me</h2>
 				<p>
-					A Full Stack Developer who specializes in JavaScript Technologies across the whole stack (React, Node.js, Express). Experience building
-					complete web applications. Passionate about anything remotely related to software development.
+					A Full Stack Developer who specializes in JavaScript Technologies across the MERN stack (MongoDB, Express, React, Node.js). Experience
+					building complete web applications. Passionate about anything remotely related to software development.
 				</p>
 				<p>
 					Currently working as a Frontend Developer at{" "}
