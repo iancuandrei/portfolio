@@ -70,6 +70,12 @@
 	margin-bottom: 20px;
 }
 
+.readocracy {
+	color: #00fd84;
+	text-decoration: none;
+	font-weight: 600;
+}
+
 @media (min-width: 1700px) {
 	.description h2 {
 		font-size: 3em;
