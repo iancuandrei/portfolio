@@ -51,8 +51,8 @@ export default function LandingPage() {
 					</div>
 				</div>
 				<h2 style={{ display: "none" }}>Iancu Andrei - Full Stack JavaScript Developer</h2>
-				<h1>Hey, I'm Andrei 👋</h1>
-				<p>Full Stack JavaScript Developer</p>
+				<h1 className="heading">Hey, I'm Andrei 👋</h1>
+				<h2 className="subheading">Full Stack JavaScript Developer</h2>
 				<img className="portrait" alt="portrait" src={portrait}></img>
 			</div>
 			<div id="about">
