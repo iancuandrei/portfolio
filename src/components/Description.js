@@ -13,7 +13,7 @@ export default function Description() {
 				</p>
 				<p>
 					Currently working as a Frontend Developer at{" "}
-					<a target="_blank" class="readocracy" rel="noopener noreferrer" href="https://readocracy.com/">
+					<a target="_blank" className="readocracy" rel="noopener noreferrer" href="https://readocracy.com/">
 						Readocracy
 					</a>
 					.
