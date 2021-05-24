@@ -50,7 +50,12 @@ export default function LandingPage() {
 						</a>
 					</div>
 				</div>
-				<h1 className="heading">Hey, I'm Andrei 👋</h1>
+				<h1 className="heading">
+					Hey, I'm Andrei{" "}
+					<span role="img" aria-label="wave emoji">
+						👋
+					</span>
+				</h1>
 				<h2 className="subheading">Full Stack JavaScript Developer</h2>
 				<img className="portrait" alt="Iancu Andrei - Full Stack JavaScript Developer" src={portrait}></img>
 			</div>

@@ -142,7 +142,7 @@ div.project:nth-of-type(5) .project-gradient {
 .btnIcon {
 	position: relative;
 	top: 3px;
-	right: 10px;
+	margin-right: 20px;
 }
 
 .project {
