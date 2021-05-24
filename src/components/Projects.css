@@ -16,19 +16,10 @@
 .project {
 	display: flex;
 	width: 70%;
-
 	border: 1px solid #e6edf6;
 	box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
 	margin-bottom: 60px;
 	border-radius: 15px;
-}
-
-.project.reverse {
-	flex-direction: row-reverse;
-}
-
-.project.reverse .project-gradient {
-	border-radius: 0 15px 15px 0;
 }
 
 .image-link {

@@ -3,169 +3,75 @@ import "./Projects.css";
 import { FaGithubSquare, FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Projects() {
+	const projectsList = [
+		{
+			title: "artInsider",
+			description: "Art Gallery created using React.js and The Harvard Art Museums API.",
+			github: "https://github.com/iancuandrei/artInsider",
+			link: "https://wildcodeschool.github.io/bucharest-project2-art-gallery/#/",
+			skills: ["CSS", "JavaScript", "React", "Git", "Netlify"],
+		},
+		{
+			title: "Travel From Your Couch Hackathon",
+			description: "Project for the Travel from your couch Hackathon. Created with React, using a public live webcam API.",
+			github: "https://github.com/iancuandrei/hackathon-travel-from-your-couch",
+			link: "https://wildcodeschool.github.io/bucharest--travel-from-your-coach-hackathon/",
+			skills: ["CSS", "JavaScript", "React", "Git", "Netlify"],
+		},
+		{
+			title: "Trivia Game",
+			description: "Trivia game created using the Open Trivia DB API.",
+			github: "https://github.com/iancuandrei/trivia-game",
+			link: "https://trivia-game1.netlify.app/",
+			skills: ["CSS", "JavaScript", "React", "Git", "Netlify"],
+		},
+		{
+			title: "devSource",
+			description: "A place for all of your development resources.",
+			github: "https://github.com/iancuandrei/devSource",
+			link: "https://devsource.netlify.app/",
+			skills: ["CSS", "JavaScript", "Git", "Netlify"],
+		},
+		{
+			title: "Todo App",
+			description: "Todo App with Local Storage.",
+			github: "https://github.com/iancuandrei/todo-app-react",
+			link: "https://todo-app-react-material-ui.netlify.app/",
+			skills: ["CSS", "JavaScript", "React", "Git", "Netlify", "MaterialUI"],
+		},
+	];
+
 	return (
 		<div className="projectsWrapper">
 			<h2>Projects</h2>
-			<div className="project">
-				{/* <img alt="project screenshot" src={artinsider}></img> */}
-				<div className="project-gradient"></div>
-
-				<div className="projDesc">
-					<h2>artInsider</h2>
-					<p>Art Gallery created using React.js and The Harvard Art Museums API.</p>
-					<div className="lang">
-						<div className="skill">CSS</div>
-						<div className="skill">JavaScript</div>
-						<div className="skill">React</div>
-						<div className="skill">Git</div>
-						<div className="skill">Netlify</div>
-					</div>
-					<div className="buttons">
-						<a href="https://wildcodeschool.github.io/bucharest-project2-art-gallery/#/" rel="noopener noreferrer" target="_blank">
-							<button className="live">
-								{" "}
-								<FaExternalLinkAlt className="btnIcon" />
-								Live Demo
-							</button>
-						</a>
-						<a href="https://github.com/iancuandrei/artInsider" rel="noopener noreferrer" target="_blank">
-							<button className="source">
-								{" "}
-								<FaGithubSquare className="btnIcon" />
-								Source Code
-							</button>
-						</a>
+			{projectsList.map((project) => (
+				<div className="project">
+					<div className="project-gradient"></div>
+					<div className="projDesc">
+						<h2>{project.title}</h2>
+						<p>{project.description}</p>
+						<div className="lang">
+							{project.skills.map((skill) => (
+								<div className="skill">{skill}</div>
+							))}
+						</div>
+						<div className="buttons">
+							<a href={project.link} rel="noopener noreferrer" target="_blank">
+								<button className="live">
+									<FaExternalLinkAlt className="btnIcon" />
+									Live Demo
+								</button>
+							</a>
+							<a href={project.github} rel="noopener noreferrer" target="_blank">
+								<button className="source">
+									<FaGithubSquare className="btnIcon" />
+									Source Code
+								</button>
+							</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div className="project reverse">
-				{/* <img alt="project screenshot" src={travel}></img> */}
-				<div className="project-gradient"></div>
-
-				<div className="projDesc">
-					<h2>Travel From Your Couch Hackathon</h2>
-					<p>Project for the Travel from your couch Hackathon. Created with React, using a public live webcam API.</p>
-					<div className="lang">
-						<div className="skill">CSS</div>
-						<div className="skill">JavaScript</div>
-						<div className="skill">React</div>
-						<div className="skill">Git</div>
-						<div className="skill">Netlify</div>
-					</div>
-					<div className="buttons">
-						<a href="https://wildcodeschool.github.io/bucharest--travel-from-your-coach-hackathon/" rel="noopener noreferrer" target="_blank">
-							<button className="live">
-								{" "}
-								<FaExternalLinkAlt className="btnIcon" />
-								Live Demo
-							</button>
-						</a>
-						<a href="https://github.com/iancuandrei/hackathon-travel-from-your-couch" rel="noopener noreferrer" target="_blank">
-							<button className="source">
-								{" "}
-								<FaGithubSquare className="btnIcon" />
-								Source Code
-							</button>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div className="project">
-				{/* <img alt="project screenshot" src={trivia}></img> */}
-				<div className="project-gradient"></div>
-				<div className="projDesc">
-					<h2>Trivia Game</h2>
-					<p>Trivia game created using the Open Trivia DB API. </p>
-					<div className="lang">
-						<div className="skill">CSS</div>
-						<div className="skill">JavaScript</div>
-						<div className="skill">React</div>
-						<div className="skill">Git</div>
-						<div className="skill">Netlify</div>
-					</div>
-					<div className="buttons">
-						<a href="https://trivia-game1.netlify.app/" rel="noopener noreferrer" target="_blank">
-							<button className="live">
-								{" "}
-								<FaExternalLinkAlt className="btnIcon" />
-								Live Demo
-							</button>
-						</a>
-						<a href="https://github.com/iancuandrei/trivia-game" rel="noopener noreferrer" target="_blank">
-							<button className="source">
-								{" "}
-								<FaGithubSquare className="btnIcon" />
-								Source Code
-							</button>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div className="project  reverse">
-				{/* <img alt="project screenshot" src={devsource}></img> */}
-				<div className="project-gradient"></div>
-
-				<div className="projDesc">
-					<h2>devSource</h2>
-					<p>A place for all of your development resources</p>
-					<div className="lang">
-						<div className="skill">HTML</div>
-						<div className="skill">CSS</div>
-						<div className="skill">JavaScript</div>
-						<div className="skill">Git</div>
-						<div className="skill">Netlify</div>
-					</div>
-					<div className="buttons">
-						<a href="https://devsource.netlify.app/" rel="noopener noreferrer" target="_blank">
-							<button className="live">
-								{" "}
-								<FaExternalLinkAlt className="btnIcon" />
-								Live Demo
-							</button>
-						</a>
-						<a href="https://github.com/iancuandrei/devSource" rel="noopener noreferrer" target="_blank">
-							<button className="source">
-								{" "}
-								<FaGithubSquare className="btnIcon" />
-								Source Code
-							</button>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div className="project">
-				{/* <img class="todo" alt="project screenshot" src={todoapp}></img> */}
-				<div className="project-gradient"></div>
-
-				<div className="projDesc">
-					<h2>Todo App</h2>
-					<p>Todo App with Local Storage</p>
-					<div className="lang">
-						<div className="skill">React</div>
-						<div className="skill">CSS</div>
-						<div className="skill">JavaScript</div>
-						<div className="skill">Git</div>
-						<div className="skill">Netlify</div>
-						<div className="skill">MaterialUI</div>
-					</div>
-					<div className="buttons">
-						<a href="https://todo-app-react-material-ui.netlify.app/" rel="noopener noreferrer" target="_blank">
-							<button className="live">
-								{" "}
-								<FaExternalLinkAlt className="btnIcon" />
-								Live Demo
-							</button>
-						</a>
-						<a href="https://github.com/iancuandrei/todo-app-react" rel="noopener noreferrer" target="_blank">
-							<button className="source">
-								{" "}
-								<FaGithubSquare className="btnIcon" />
-								Source Code
-							</button>
-						</a>
-					</div>
-				</div>
-			</div>
+			))}
 		</div>
 	);
 }
