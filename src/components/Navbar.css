@@ -29,14 +29,15 @@
 	fill: #232733;
 	margin-left: 30px;
 	font-size: 20px;
-}
-
-.navIcon:hover {
-	fill: #7510f7;
+	cursor: pointer;
 }
 
 .dark-theme .navIcon {
 	fill: #ddd;
+}
+
+.navIcon:hover {
+	fill: #7510f7;
 }
 
 .dark-theme .link {
