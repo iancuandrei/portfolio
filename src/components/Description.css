@@ -11,11 +11,19 @@
 	margin-bottom: 50px;
 }
 
+.dark-theme .description h2 {
+	color: #222;
+}
+
 .description p {
 	font-size: 1.2em;
 	font-weight: 400;
 	line-height: 30px;
 	margin-bottom: 20px;
+}
+
+.dark-theme .description p {
+	color: #222;
 }
 
 .skills {
@@ -27,6 +35,12 @@
 	position: relative;
 	bottom: 150px;
 	background: #fff;
+}
+
+.dark-theme .skills {
+	background: #222;
+	border-color: #333;
+	box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5), 0 15px 35px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .skill-col {
@@ -43,8 +57,16 @@
 	margin-bottom: 50px;
 }
 
+.dark-theme .skill-col h2 {
+	color: #ddd;
+}
+
 .br {
 	border-right: 1px solid #e6edf6;
+}
+
+.dark-theme .br {
+	border-color: #333;
 }
 
 .center {
@@ -61,6 +83,10 @@
 	padding: 7px 15px;
 	font-weight: 500;
 	color: #232733;
+}
+
+.dark-theme .skill {
+	color: #ddd;
 }
 
 .icon {

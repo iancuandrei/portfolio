@@ -7,6 +7,10 @@
 	height: 100vh;
 }
 
+.dark-theme .contact-ct * {
+	color: #222;
+}
+
 .contact-content {
 	display: flex;
 	flex-direction: column;
@@ -78,6 +82,24 @@ input {
 	transition: 0.3s;
 }
 
+.dark-theme .contact-ct button {
+	background: #222;
+	color: #7510f7;
+	box-shadow: 0 50px 100px rgba(0, 0, 0, 0.2), 0 15px 35px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme .contact-ct button:hover {
+	background: #151515;
+}
+
+.dark-theme .contact-ct input,
+.dark-theme .contact-ct textarea {
+	background: #222;
+	border: 3px solid #777;
+	color: #ddd;
+	box-shadow: 0 50px 100px rgba(0, 0, 0, 0.2), 0 15px 35px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 form {
 	display: flex;
 	flex-direction: column;
@@ -94,6 +116,10 @@ form {
 	transition: 0.3s;
 }
 
+.dark-theme .footerIcon {
+	color: #222;
+}
+
 .contact-ct a {
 	text-decoration: none;
 	color: #fff;
@@ -102,6 +128,10 @@ form {
 
 .inputError {
 	border: 3px solid red;
+}
+
+.dark-theme .inputError {
+	border: 3px solid red !important;
 }
 
 button.submitted {

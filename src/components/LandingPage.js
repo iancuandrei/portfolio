@@ -7,10 +7,20 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import "./Navbar.css";
 import logo from "../images/logo_transparent.png";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 export default function LandingPage() {
 	const [vantaEffect, setVantaEffect] = useState(0);
+	const [darkTheme, setDarkTheme] = useState(false);
 	const myRef = useRef(null);
+
+	useEffect(() => {
+		const theme = localStorage.getItem("theme");
+		if (theme === "dark-theme") {
+			setDarkTheme(true);
+		}
+	}, []);
+
 	useEffect(() => {
 		if (!vantaEffect) {
 			setVantaEffect(
@@ -30,15 +40,39 @@ export default function LandingPage() {
 			);
 		}
 		return () => {
-			if (vantaEffect) vantaEffect.destroy();
+			if (vantaEffect) {
+				vantaEffect.destroy();
+			}
 		};
 	}, [vantaEffect]);
+
+	useEffect(() => {
+		document.querySelector("body").style.backgroundColor = darkTheme ? "#222" : "#fff";
+
+		localStorage.setItem("theme", darkTheme ? "dark-theme" : "light");
+
+		setVantaEffect(
+			DOTS({
+				el: myRef.current,
+				mouseControls: true,
+				touchControls: true,
+				gyroControls: false,
+				minHeight: 200.0,
+				minWidth: 200.0,
+				scale: 1.0,
+				scaleMobile: 1.0,
+				color: 0x7510f7,
+				color2: darkTheme ? "#222" : "#fff",
+				backgroundColor: darkTheme ? "#222" : "#fff",
+			})
+		);
+	}, [darkTheme]);
 	return (
-		<div>
+		<div className={darkTheme ? "dark-theme" : ""}>
 			<div className="intro" ref={myRef}>
 				<div className="navbar">
 					<img alt="logo" className="logo" src={logo}></img>
-					<div>
+					<div className="navLinks">
 						<a href="#about" className="link">
 							About
 						</a>
@@ -48,6 +82,11 @@ export default function LandingPage() {
 						<a href="#contact" className="link">
 							Contact
 						</a>
+						{darkTheme ? (
+							<FaSun class="navIcon" onClick={() => setDarkTheme(!darkTheme)} />
+						) : (
+							<FaMoon class="navIcon" onClick={() => setDarkTheme(!darkTheme)} />
+						)}
 					</div>
 				</div>
 				<h1 className="heading">

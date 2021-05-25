@@ -16,10 +16,13 @@
 .project {
 	display: flex;
 	width: 70%;
-	border: 1px solid #e6edf6;
 	box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05), 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
 	margin-bottom: 60px;
 	border-radius: 15px;
+}
+
+.dark-theme .project {
+	box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5), 0 15px 35px rgba(0, 0, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .image-link {
@@ -99,6 +102,10 @@ div.project:nth-of-type(5) .project-gradient {
 	margin: 10px;
 }
 
+.dark-theme .lang .skill {
+	color: #ddd;
+}
+
 .buttons {
 	display: flex;
 	justify-content: center;
@@ -159,11 +166,16 @@ div.project:nth-of-type(5) .project-gradient {
 .projDesc {
 	padding: 50px;
 	position: relative;
-	background: white;
+	background: #fff;
 	z-index: 3;
 	border-radius: 10px;
 	justify-content: center;
 	align-items: center;
+}
+
+.dark-theme .projDesc {
+	background: #222;
+	color: #ddd;
 }
 
 .project .project-gradient {
