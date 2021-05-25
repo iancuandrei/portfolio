@@ -8,7 +8,7 @@
 }
 
 .dark-theme .contact-ct * {
-	color: #111;
+	color: #ddd;
 }
 
 .contact-content {
@@ -84,7 +84,7 @@ input {
 
 .dark-theme .contact-ct button {
 	background: #222;
-	color: #7510f7;
+	color: #ddd;
 	box-shadow: 0 50px 100px rgba(0, 0, 0, 0.2), 0 15px 35px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -191,7 +191,11 @@ button.submitted span {
 
 @media (hover: hover) {
 	.footerIcon:hover {
-		color: #e8d6ff;
+		fill: #e8d6ff;
+	}
+
+	.dark-theme .footerIcon:hover {
+		fill: #aaa !important;
 	}
 
 	.contact-ct button:hover {
