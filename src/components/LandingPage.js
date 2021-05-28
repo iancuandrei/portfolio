@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import DOTS from "vanta/dist/vanta.dots.min";
-import portrait from "../images/portrait-min.jpeg";
+import portrait from "../images/iancu-andrei.jpeg";
 import "./Intro.css";
 import Description from "./Description";
 import Projects from "./Projects";
